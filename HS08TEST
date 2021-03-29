@@ -1,0 +1,10 @@
+Problem: HS08TEST Contest: PRACTICE(SCHOOL)
+
+amount,balance=map(float,input().split())
+if (amount%5==0):
+    if(balance>amount+0.50):
+        print("%.2f"%(balance-amount-0.50))
+    elif(balance<amount+0.50):
+        print("%.2f"%balance)
+else:
+    print("%.2f"%balance)
