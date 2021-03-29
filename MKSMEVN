@@ -1,0 +1,23 @@
+Problem: MKSMEVN Contest: PRACTICE(EASY)
+
+t=int(input())
+count=0
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    total=sum(a)
+    if total%2==0:
+        print(0)
+    else:
+        for i in a:
+            if i==2:
+                count=count+1
+                break
+            else:
+                count=0
+        if count==0:
+            print(-1)
+            
+        else:
+            print(1)
+            
