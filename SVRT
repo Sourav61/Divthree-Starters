@@ -1,0 +1,12 @@
+Contest Code:PRACTICE Problem Code:SVRT
+
+import math
+t = int(input())
+for _ in range(t):
+    n,k=map(int,input().split())
+    d=math.ceil(n/k)
+    if n%k==0:
+       x=k
+    else:
+       x=n%k
+    print(d,x)
