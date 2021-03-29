@@ -1,0 +1,13 @@
+Problem: DIVTHREE Contest: PRACTICE(SCHOOL)
+
+t=int(input())
+for _ in range(t):
+    n,k,d=map(int,input().split())
+    a=list(map(int,input().split()))
+    total=sum(a)
+    contest=total//k
+    if(contest<=d):
+        ans=contest
+    else:
+        ans=d
+    print(ans)
