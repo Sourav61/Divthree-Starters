@@ -1,0 +1,20 @@
+Contest Code:PRACTICE Problem Code:COLGLF5
+
+t = int(input())
+for _ in range(t):
+    n,m=map(int,input().split())
+    f=list(map(int,input().split()))
+    c=list(map(int,input().split()))
+    d=dict()
+    for i in f:
+        d[i]="f"
+    for j in c:
+        d[j]="c"
+    l=list(sorted(d.keys()))
+    ans=0
+    for i in range(len(l)-1):
+        if i==0 and d[l[i]]=="c":
+            ans+=1
+        if d[l[i]]!=d[l[i+1]]:
+            ans+=1 
+    print(ans)
