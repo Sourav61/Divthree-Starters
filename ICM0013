@@ -1,0 +1,6 @@
+Problem: ICM0013 Contest: ICM2021C 
+
+t = int(input())
+for _ in range(t):
+    n=int(input())
+    print(n)
