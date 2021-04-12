@@ -1,0 +1,9 @@
+Problem: SOCKS1 Contest: APRIL21C
+
+a,b,c = map(int,input().split())
+
+if a!=b and a!=c:
+    print("NO")
+    
+else:
+    print("YES")
