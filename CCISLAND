@@ -1,0 +1,10 @@
+Problem: CCISLAND Contest: START3C
+
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    x,y,a,b,d = map(int,input().split())
+    if min(x/a,y/b) >= d:
+        print("YES")
+    else:
+        print("NO")
