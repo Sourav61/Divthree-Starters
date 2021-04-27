@@ -1,0 +1,16 @@
+Problem: HIRETEST Contest: START3C
+
+# cook your dish here
+t = int(input())
+for _ in range(t):
+    re = str()
+    n,m = map(int,input().split())
+    x,y = map(int,input().split())
+    for i in range(n):
+        p = list(str(input()))
+        if p.count('F') >= x or p.count('F') >= x-1 and p.count('P') >= y:
+            result = "1"
+        else:
+            result = "0"
+        re += str(result)
+    print(re)
