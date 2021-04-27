@@ -1,0 +1,9 @@
+Problem: TDL01 Contest: CRKR2021
+
+# cook your dish here
+n,x = map(int,input().split())
+h = list(map(int,input().split()))
+if sum(h)+x <= 24:
+    print("YES")
+else:
+    print("NO")
