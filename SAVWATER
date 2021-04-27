@@ -1,0 +1,12 @@
+Problem: SAVWATER Contest: SPYB21C 
+
+# cook your dish here
+import math
+t= int(input())
+for _ in range(t):
+    h,x,y,c = map(int,input().split())
+    if h*(x+math.floor(y/2)) <= c:
+        print("YES")
+        
+    else:
+        print("NO")
